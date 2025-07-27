@@ -6,7 +6,7 @@ import { PackageOpen } from "lucide-react";
 export default function DonatePage() {
   return (
     <ActionLayout>
-      <div className="flex flex-col pt-5 pb-10 w-5xl mx-auto font-inter text-amber-50">
+      <div className="flex flex-col pt-5 pb-10 max-w-5xl mx-auto font-inter text-amber-50">
         <div className="relative mx-auto px-6 items-center justify-center">
           <div className="mx-auto max-w-5xl text-center space-y-7">
             <FadeContent
@@ -39,10 +39,10 @@ export default function DonatePage() {
               initialOpacity={0}
               delay={0.1}
             >
-              <p className="mx-auto leading-[22px] font-inter w-100 text-center">
+              <p className="mx-auto font-inter md:w-115 text-lg text-center">
                 Here are the official drop-off points for in-kind donations.
                 Please coordinate with the location contact before delivering
-                any items
+                any items.
               </p>
             </FadeContent>
             <FadeContent
@@ -51,7 +51,7 @@ export default function DonatePage() {
               initialOpacity={0}
               delay={0.1}
             >
-              <p className="mx-auto leading-[22px] font-inter w-100 text-center">
+              <p className="mx-auto font-inter md:w-115 text-lg text-center">
                 We also accept printers, printer ink, coupon bonds, stationery
                 supplies such as pens, correction tapes, paper and etc.
               </p>

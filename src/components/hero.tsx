@@ -6,8 +6,8 @@ import FadeContent from "./react-bits/fade-content";
 export function Hero() {
   return (
     <div className="relative bg-amber-50 flex flex-col justify-center text-emerald-700 h-screen">
-      <div className="relative mx-auto px-6 items-center">
-        <div className="mx-auto max-w-5xl text-center space-y-10">
+      <div className="relative max-w-5xl mx-auto px-6 items-center">
+        <div className="mx-auto text-center space-y-5">
           <FadeContent
             duration={1000}
             easing="ease-out"
@@ -19,7 +19,7 @@ export function Hero() {
               <p className="text-lg md:text-2xl font-semibold font-inter">
                 we are <span className="font-black">project apple tree.</span>
               </p>
-              <p className="text-5xl md:text-7xl font-instrument">
+              <p className="text-6xl font-instrument">
                 Help make a difference <br/> in education.
               </p>
             </div>
@@ -30,7 +30,7 @@ export function Hero() {
             initialOpacity={0}
             delay={0.3}
           >
-            <p className="mx-auto leading-[22px] font-inter w-90 text-center">
+            <p className="mx-auto leading-[22px] font-inter text-center font-medium md:text-xl">
               Support our school fundraiser.
             </p>
           </FadeContent>
@@ -69,7 +69,7 @@ export function Hero() {
           initialOpacity={0}
           delay={0.9}
         >
-          <p>what we aim </p>
+          <p className="text-xs md:text-base">what <span>project apple tree</span> aims </p>
         </FadeContent>
         <FadeContent
           duration={1000}

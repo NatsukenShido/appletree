@@ -6,7 +6,7 @@ import { CircleDollarSign } from "lucide-react";
 export default function DonatePage() {
   return (
     <ActionLayout>
-      <div className="flex flex-col pt-5 pb-10 w-5xl mx-auto font-inter text-amber-50">
+      <div className="flex flex-col pt-5 pb-10 max-w-5xl mx-auto font-inter text-amber-50">
         <div className="relative mx-auto px-6 items-center">
           <div className="mx-auto max-w-5xl text-center space-y-7">
             <FadeContent
@@ -39,7 +39,7 @@ export default function DonatePage() {
               initialOpacity={0}
               delay={0.1}
             >
-              <p className="mx-auto leading-[22px] font-inter w-100 text-center">
+              <p className="mx-auto leading-[22px] font-inter md:w-100 text-center">
                 Participate on our School Fundraising by donating to our
                 organization. Any amount will suffice.
               </p>

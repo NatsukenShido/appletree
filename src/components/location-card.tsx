@@ -16,7 +16,7 @@ import { Button } from "./ui/button";
 export function LocationCard() {
   return (
     <div className="relative flex flex-col mx-auto">
-      <div className="relative grid grid-cols-2 gap-8 w-5xl my-5">
+      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8 md:w-5xl my-5">
         {LocationData.map((item, index) => (
           <Link to={item.brandlink} key={index}>
             <AnimatedContent
@@ -28,7 +28,7 @@ export function LocationCard() {
               initialOpacity={0.0}
               animateOpacity
               scale={1.0}
-              threshold={0.2}
+              threshold={0}
               delay={item.id * 0.1}
             >
               <div>
@@ -40,7 +40,7 @@ export function LocationCard() {
                   key={index}
                 >
                   <CardHeader>
-                    <CardDescription className="font-cerebri text-start z-1">
+                    <CardDescription className="text-start z-1">
                       {item.entry}
                     </CardDescription>
                     <CardTitle className="text-4xl text-start font-extrabold z-1">

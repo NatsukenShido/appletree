@@ -18,7 +18,6 @@ import {
               </div>
             </Link>
           </h1>
-          {/* <Separator className="bg-neutral-800 md:hidden" /> */}
           <div className="col-span-1 place-self-center md:place-self-end font-inter py-2 md:py-0">
             <NavigationMenu>
               <NavigationMenuList>

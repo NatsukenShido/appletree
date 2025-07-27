@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label";
 
 export function DonateCard() {
   return (
-    <Card className="w-100 max-w-lg bg-amber-50 border-0 shadow-2xl text-emerald-700">
+    <Card className="md:w-100 bg-amber-50 border-0 shadow-2xl text-emerald-700">
       <CardContent>
         <form>
           <div className="flex flex-col gap-6">
