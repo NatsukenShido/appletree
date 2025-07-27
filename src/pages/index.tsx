@@ -38,7 +38,7 @@ export default function IndexPage() {
             delay={0.5}
           >
             <img
-              src="src/img/retriever.png"
+              src="https://github.com/kogskogskogs/appletree/blob/main/src/img/retriever.png?raw=true"
               className="w-175 mx-auto rounded-lg shadow-2xl mt-5"
             />
           </FadeContent>
@@ -57,7 +57,7 @@ export default function IndexPage() {
             dedicated to making a difference.
           </p>
           <img
-            src="src/img/dalmatian.png"
+            src="https://github.com/kogskogskogs/appletree/blob/main/src/img/dalmatian.png?raw=true"
             className="w-175 mx-auto rounded-lg shadow-2xl mt-5"
           />
         </div>

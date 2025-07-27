@@ -15,7 +15,7 @@ export function Hero() {
             delay={0.1}
           >
             <div className="flex flex-col mx-auto text-center justify-center items-center space-y-5">
-              <img src="src/img/Financial Literacy 1.svg" className="w-60"/>
+              <img src="https://raw.githubusercontent.com/kogskogskogs/appletree/e843eb5d6a701459171552ecfe3543355e5baba9/src/img/Financial%20Literacy%201.svg" className="w-60"/>
               <p className="text-lg md:text-2xl font-semibold font-inter">
                 we are <span className="font-black">project apple tree.</span>
               </p>
