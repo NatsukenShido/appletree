@@ -39,7 +39,7 @@ export default function DonatePage() {
               initialOpacity={0}
               delay={0.1}
             >
-              <p className="mx-auto font-inter md:w-115 text-lg text-center">
+              <p className="mx-auto font-inter md:w-115 md:text-lg text-center">
                 Here are the official drop-off points for in-kind donations.
                 Please coordinate with the location contact before delivering
                 any items.
@@ -51,7 +51,7 @@ export default function DonatePage() {
               initialOpacity={0}
               delay={0.1}
             >
-              <p className="mx-auto font-inter md:w-115 text-lg text-center">
+              <p className="mx-auto font-inter md:w-115 md:text-lg text-center">
                 We also accept printers, printer ink, coupon bonds, stationery
                 supplies such as pens, correction tapes, paper and etc.
               </p>
