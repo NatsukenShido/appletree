@@ -1,0 +1,38 @@
+export const LocationData = [
+    {
+        id: 1,
+        entry: "Location #01",
+        address: "Poctoy, Odiongan, Romblon",
+        contact: "Mr. Jobart",
+        number: "0917-***-****",
+        title: "VCBS Campus",
+        brandlink: "/experiments/time-based-greetings",
+    },
+    {
+        id: 2,
+        entry: "Location #02",
+        address: "Liwayway, Odiongan, Romblon",
+        contact: "Kuya Ivan",
+        number: "0918-***-****",
+        title: "Fortu's Residences",
+        brandlink: "/experiments/quiz-testing",
+    },
+    {
+        id: 3,
+        entry: "Location #03",
+        address: "San Andres Covered Court (SA, Romblon)",
+        contact: "Ate Queen",
+        number: "0920-***-****",
+        title: "San Andres Branch",
+        brandlink: "/experiments/quiz-testing",
+    },
+    {
+        id: 4,
+        entry: "Location #04",
+        address: "Looc Covered Court (Poblacion, Looc, Romblon)",
+        contact: "Ate Nikki",
+        number: "0919-***-****",
+        title: "Looc Branch",
+        brandlink: "/experiments/quiz-testing",
+    },
+]

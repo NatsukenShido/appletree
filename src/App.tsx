@@ -1,35 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Route, Routes, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { siteConfig } from "@/utils/site";
+
+import IndexPage from "./pages";
+import DonatePage from "./pages/actions/donate";
+import DropOffPage from "./pages/actions/drop-off";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const location = useLocation();
+  const isLandingPage = location.pathname === '/'
+
+  useEffect(() => {
+    const pathName = location.pathname;
+    const page = siteConfig.pages.find((i) => i.href === pathName);
+    
+    document.title = siteConfig.title(page?.label);
+  }, [location]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    if (isLandingPage) {
+      document.documentElement.style.setProperty('--primary-color', '#065f46')
+      document.documentElement.style.setProperty('--bg-color', '#fffbeb')
+    } else {
+      document.documentElement.style.setProperty('--primary-color', '#fffbeb')
+      document.documentElement.style.setProperty('--bg-color', '#065f46')
+    }
+  }, [isLandingPage])
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <Routes location={location}>
+        <Route element={<IndexPage />} path="/" />
+
+        <Route element={<DonatePage />} path="/donate" />
+        <Route element={<DropOffPage />} path="/drop-off-locations" />
+      </Routes>
+    </div>
+  );
 }
 
-export default App
+export default App;
