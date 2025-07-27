@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Compass, SquareArrowOutUpRight } from "lucide-react";
+import { Compass, MapPinned, SquareArrowOutUpRight } from "lucide-react";
 import AnimatedContent from "./react-bits/animated-content";
 import { Link } from "react-router-dom";
 import { LocationData } from "@/utils/locations";
@@ -46,9 +46,9 @@ export function LocationCard() {
                     <CardTitle className="text-4xl text-start font-extrabold z-1">
                       {item.title}
                     </CardTitle>
-                    {/* <CardAction>
-                      <SquareArrowOutUpRight />
-                    </CardAction> */}
+                    <CardAction>
+                      <MapPinned />
+                    </CardAction>
                   </CardHeader>
                   <CardContent>
                     <CardDescription className="font-bold text-start z-1">
